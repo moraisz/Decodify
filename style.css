@@ -1,0 +1,90 @@
+:root {
+    --cor1: #65647C;
+    --cor2: #8B7E74;
+    --cor3: #C7BCA1;
+    --cor4: #F1D3B3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor1);
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    padding: 1% 2%;
+    color: var(--cor4);
+}
+
+.apresentacao {
+    padding: 1% 10%;
+}
+
+.apresentacao__conteudo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 42px;
+}
+
+.apresentacao__conteudo__div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.apresentacao__conteudo__div__input {
+    border: 1px;
+    border-radius: 4px;
+    padding: 10px;
+    height: 30.5rem;
+    width: 45.5rem;  
+    background-color: var(--cor2);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    color: var(--cor4);
+}
+
+.apresentacao__conteudo__div__retorno {
+    border: 1px ;
+    border-radius: 4px;
+    padding: 10px;
+    height: 30.5rem;
+    width: 13.5rem;
+    resize: none;
+    background-color: var(--cor2);
+    overflow-wrap: break-word;
+    color: var(--cor4);
+}
+
+.apresentacao__conteudo__div__botoes {
+    display: flex;
+    gap: 12px;
+}
+
+.apresentacao__conteudo__div__botao {
+    border-radius: 15px;
+    padding: 5px;
+    background-color: var(--cor2);
+    color: var(--cor4);
+    width: 50%;
+    cursor: pointer; /* Adicione o cursor pointer */
+    transition: background-color 0.3s ease; /* Adicione a transição para o efeito hover */
+}
+
+.apresentacao__conteudo__div__botao:hover {
+    background-color: var(--cor3); /* Altere a cor desejada para o efeito de hover */
+}
+
+.rodape {
+    text-align: center;
+    background-color: var(--cor2);
+    color: var(--cor4);
+    padding: 24px;
+    margin-top: 5%;
+}

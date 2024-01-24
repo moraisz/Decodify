@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificar de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__nav">
+            <h1 class="cabecalho__nav__titulo">DecoDify</h1>
+        </nav>
+    </header>
+
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <div class="apresentacao__conteudo__div">
+                <textarea id="input__area" class="apresentacao__conteudo__div__input" cols="30" rows="10" placeholder="Aqui"></textarea>
+                <div class="apresentacao__conteudo__div__botoes">
+                    <button onclick="criptografar()" class="apresentacao__conteudo__div__botao">Criptografar</button>
+                    <button onclick="descriptografar()" class="apresentacao__conteudo__div__botao">Descriptografar</button>
+                </div>
+            </div>
+
+            <div class="apresentacao__conteudo__div">
+                <p id="retorno" class="apresentacao__conteudo__div__retorno"></p>
+                <button onclick="copiarTexto()" class="apresentacao__conteudo__div__botao">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Feito por mim</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
