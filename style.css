@@ -34,6 +34,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     gap: 42px;
+    padding: 2px;
 }
 
 .apresentacao__conteudo__div {
@@ -43,7 +44,7 @@ body {
     align-items: center;
 }
 
-.apresentacao__conteudo__div__input {
+.apresentacao__conteudo__div__input {   
     resize: none;
     font-family: var(--fonte);
     font-size: 1rem;
@@ -51,7 +52,7 @@ body {
     border-radius: 4px;
     padding: 10px;
     height: 30.5rem;
-    width: 45.5rem;  
+    width: 45.5rem;
     background-color: var(--cor2);
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -123,4 +124,26 @@ body {
 
 .rodape__icons:hover {
     background-color: var(--cor-hover)
+}
+
+@media (max-width: 1200px) {
+    .apresentacao {
+        flex-direction: column;
+        padding: 5%;
+    }
+    
+    .apresentacao__conteudo {
+        width: auto;
+        flex-direction: column;
+    }
+
+    .apresentacao__conteudo__div__input {
+        box-sizing: border-box;
+        width: auto;
+    }
+
+    .apresentacao__conteudo__div__retorno {
+        box-sizing: border-box;
+        width: auto;
+    }
 }
