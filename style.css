@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 :root {
-    --cor1: #65647C;
-    --cor2: #8B7E74;
-    --cor3: #C7BCA1;
-    --cor4: #F1D3B3;
+    --cor1: #222831;
+    --cor2: #00ADB5;
+    --cor3: #EEEEEE;
+    --cor-hover: #393E46;
+
+    --fonte: 'Roboto Mono', monospace;
 }
 
 * {
@@ -11,13 +15,14 @@
 }
 
 body {
-    background-color: var(--cor1);
+    background: linear-gradient(to bottom right, var(--cor1), var(--cor2));
     box-sizing: border-box;
 }
 
 .cabecalho {
+    font-family: var(--fonte);
     padding: 1% 2%;
-    color: var(--cor4);
+    color: var(--cor3);
 }
 
 .apresentacao {
@@ -39,6 +44,9 @@ body {
 }
 
 .apresentacao__conteudo__div__input {
+    resize: none;
+    font-family: var(--fonte);
+    font-size: 1rem;
     border: 1px;
     border-radius: 4px;
     padding: 10px;
@@ -47,10 +55,12 @@ body {
     background-color: var(--cor2);
     word-wrap: break-word;
     overflow-wrap: break-word;
-    color: var(--cor4);
+    color: var(--cor3);
 }
 
 .apresentacao__conteudo__div__retorno {
+    font-family: var(--fonte);
+    font-size: 1rem;
     border: 1px ;
     border-radius: 4px;
     padding: 10px;
@@ -59,7 +69,7 @@ body {
     resize: none;
     background-color: var(--cor2);
     overflow-wrap: break-word;
-    color: var(--cor4);
+    color: var(--cor3);
 }
 
 .apresentacao__conteudo__div__botoes {
@@ -68,23 +78,47 @@ body {
 }
 
 .apresentacao__conteudo__div__botao {
+    font-family: var(--fonte);
+    border: 2px solid;
     border-radius: 15px;
-    padding: 5px;
-    background-color: var(--cor2);
-    color: var(--cor4);
+    padding: 4px 10px;
+    background-color: transparent;
+    color: var(--cor3);
     width: 50%;
-    cursor: pointer; /* Adicione o cursor pointer */
-    transition: background-color 0.3s ease; /* Adicione a transição para o efeito hover */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .apresentacao__conteudo__div__botao:hover {
-    background-color: var(--cor3); /* Altere a cor desejada para o efeito de hover */
+    background-color: var(--cor-hover)
 }
 
 .rodape {
+    display: flex;
+    justify-content: center;
+    font-family: var(--fonte);
     text-align: center;
     background-color: var(--cor2);
-    color: var(--cor4);
-    padding: 24px;
+    color: var(--cor3);
+    padding: 20px;
     margin-top: 5%;
+    gap: 5px;
+}
+
+.rodape__icons {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: var(--fonte);
+    padding: 8px;
+    border-radius: 3px;
+    color: var(--cor3);
+    background-color: var(--cor1);
+    transition: background-color 0.3s ease;
+}
+
+.rodape__icons:hover {
+    background-color: var(--cor-hover)
 }
