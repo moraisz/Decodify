@@ -75,6 +75,26 @@ body {
     overflow: auto;
 }
 
+::-webkit-input-placeholder {
+    color: var(--cor-hover);
+    font: var(--fonte);
+}
+
+:-moz-placeholder {
+    color: var(--cor3);
+    font: var(--fonte);
+}
+
+::-moz-placeholder {
+    color: var(--cor3);
+    font: var(--fonte);
+}
+
+:-ms-input-placeholder {  
+    color: var(--cor3);
+    font: var(--fonte);
+}
+
 .apresentacao__conteudo__div__botoes {
     display: flex;
     gap: 12px;
@@ -98,6 +118,7 @@ body {
 
 .rodape {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     font-family: var(--fonte);
     text-align: center;
@@ -108,7 +129,17 @@ body {
     gap: 5px;
 }
 
-.rodape__icons {
+.rodape__p {
+    padding: 3px 1px;
+}
+
+.rodape__div {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.rodape__div__icons {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -122,7 +153,7 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.rodape__icons:hover {
+.rodape__div__icons:hover {
     background-color: var(--cor-hover)
 }
 

@@ -17,7 +17,7 @@
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
             <div class="apresentacao__conteudo__div">
-                <textarea type="text" spellcheck="false" id="input__area" class="apresentacao__conteudo__div__input" cols="30" rows="10"></textarea>
+                <textarea type="text" spellcheck="false" placeholder="O texto normal será aqui" id="input__area" class="apresentacao__conteudo__div__input" cols="30" rows="10"></textarea>
                 <div class="apresentacao__conteudo__div__botoes">
                     <button onclick="decodificar()" class="apresentacao__conteudo__div__botao">Criptografar</button>
                     <button onclick="desfazer()" class="apresentacao__conteudo__div__botao">Descriptografar</button>
@@ -25,21 +25,24 @@
             </div>
 
             <div class="apresentacao__conteudo__div">
-                <textarea type="text" spellcheck="false" id="return__area" class="apresentacao__conteudo__div__retorno" cols="30" rows="10"></textarea>
+                <textarea type="text" spellcheck="false" placeholder="O texto criptografado será aqui" id="return__area" class="apresentacao__conteudo__div__retorno" cols="30" rows="10"></textarea>
                 <button onclick="" id="copy" class="apresentacao__conteudo__div__botao">Copiar</button>
             </div>
         </section>
     </main>
 
     <footer class="rodape">
-        <a class="rodape__icons" href="https://github.com/moraisz">
-            <img src="imgs/github.png" alt="github_logo">
-            GitHub
-        </a>
-        <a class="rodape__icons" href="https://www.linkedin.com/in/moraisz/">
-            <img src="imgs/linkedin.png" alt="linkedin_logo">
-            LinkedIn
-        </a>
+        <p class="rodape__p">Programado e feito por moraisz</p>
+        <div class="rodape__div">
+            <a class="rodape__div__icons" href="https://github.com/moraisz" target="_blank">
+                <img src="imgs/github.png" alt="github_logo">
+                GitHub
+            </a>
+            <a class="rodape__div__icons" href="https://www.linkedin.com/in/moraisz/" target="_blank">
+                <img src="imgs/linkedin.png" alt="linkedin_logo">
+                LinkedIn
+            </a>
+        </div>
     </footer>
 
     <script src="app.js"></script>
