@@ -17,16 +17,16 @@
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
             <div class="apresentacao__conteudo__div">
-                <textarea type="text" id="input__area" class="apresentacao__conteudo__div__input" cols="30" rows="10"></textarea>
+                <textarea type="text" spellcheck="false" id="input__area" class="apresentacao__conteudo__div__input" cols="30" rows="10"></textarea>
                 <div class="apresentacao__conteudo__div__botoes">
                     <button onclick="decodificar()" class="apresentacao__conteudo__div__botao">Criptografar</button>
-                    <button onclick="" class="apresentacao__conteudo__div__botao">Descriptografar</button>
+                    <button onclick="desfazer()" class="apresentacao__conteudo__div__botao">Descriptografar</button>
                 </div>
             </div>
 
             <div class="apresentacao__conteudo__div">
-                <p class="apresentacao__conteudo__div__retorno"></p>
-                <button onclick="" class="apresentacao__conteudo__div__botao">Copiar</button>
+                <textarea type="text" spellcheck="false" id="return__area" class="apresentacao__conteudo__div__retorno" cols="30" rows="10"></textarea>
+                <button onclick="" id="copy" class="apresentacao__conteudo__div__botao">Copiar</button>
             </div>
         </section>
     </main>

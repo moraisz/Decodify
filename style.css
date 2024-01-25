@@ -68,8 +68,10 @@ body {
     width: 13.5rem;
     resize: none;
     background-color: var(--cor2);
+    word-wrap: break-word;
     overflow-wrap: break-word;
     color: var(--cor3);
+    overflow: auto;
 }
 
 .apresentacao__conteudo__div__botoes {
